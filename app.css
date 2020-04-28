@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap');
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: 'Roboto', sans-serif;
+}
+
+.clock--container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(1fr, 3);
+  height: 100vh;
+}
+
+.clock--time {
+  height: 33vh;
+  grid-row-start: 2;
+  justify-self: center;
+  font-size: 150px;
+  color: white;
+}
+
