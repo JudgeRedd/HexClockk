@@ -1,25 +1,62 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap');
+@font-face {
+  font-family: 'digital-7regular';
+  src: url('digital-7.regular-webfont.woff2') format('woff2'),
+       url('digital-7.regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
 * {
   margin: 0;
   box-sizing: border-box;
 }
 
 html {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'digital-7regular', cursive;
 }
 
 .clock--container {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: repeat(1fr, 3);
+  grid-template-rows: 1fr 50px;
   height: 100vh;
 }
 
 .clock--time {
-  height: 33vh;
-  grid-row-start: 2;
-  justify-self: center;
-  font-size: 150px;
-  color: white;
+  align-self: center;
+  text-align: center;
+  font-size: 16vw;
 }
 
+.clock--time > span {
+  display: inline-block;
+  text-align: right;
+  width: 7vw;
+}
+
+.char3, .char6 {
+  display: inline-block;
+  text-align: right;
+  width: 3vw !important;
+}
+
+.footer {
+  display: grid;
+}
+
+.gitlink {
+  align-self: center;
+  justify-self: center;
+}
+
+.gitlink > a {
+  font-size: 40px;
+}
+
+/* span[class^="char"] {
+  text-shadow: 0px 3px 0px #b2a98f,
+                0px 14px 10px rgba(0,0,0,0.15),
+                0px 24px 2px rgba(0,0,0,0.1),
+                0px 34px 30px rgba(0,0,0,0.1);
+} */
